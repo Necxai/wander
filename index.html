@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WANDERLISTER | KENYA</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<link rel="icon" type="image/x-icon" href="img/icons8-favicon-94.png">
+
+ <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+   <!-- Overlay for the loading counter --
+   <div id="loading-overlay">
+    <p id="counter">0</p>
+  </div>-->
+
+
+  <nav class="navbar">
+    <!-- Logo Section -->
+    <div class="logo">
+      <i class="fas fa-globe-africa logo-icon"></i>
+      <h1 class="logo-text">WANDERLISTER</h1>
+  </div>
+    <!-- Menu Toggle for Mobile -->
+  <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+ <!-- Links -->
+ <ul class="navbar-links">
+  <li><a class="active" href="#home"><i class="fas fa-home"></i> Home</a></li>
+  <li><a class="active" href="#destinations"><i class="fas fa-map-marker-alt"></i> Destinations</a></li>
+  <li><a class="active" href="#tours"><i class="fas fa-suitcase"></i> Tours</a></li>
+  <li><a class="active" href="#offers"><i class="fas fa-tags"></i> Offers</a></li>
+  <li><a class="active" href="#blog"><i class="fas fa-newspaper"></i> Blog</a></li>
+  <li><a class="active" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+</ul>
+<!-- Dark/Light Mode Toggle Button --
+<button id="mode-toggle" class="mode-toggle">
+  <i class="fas fa-sun"></i>
+
+</button>-->
+<!-- Call-to-Action Button -->
+<button class="cta-button" onclick="joinMembership()">Sign Up / LogIn</button>
+
+
+<!-- Welcome Message --
+<div class="welcome-message"></div>-->
+
+
+
+<script>
+  // Toggle Menu for Mobile
+  function toggleMenu() {
+    const navbarLinks = document.querySelector('.navbar-links');
+    navbarLinks.classList.toggle('mobile-active');
+  }
+</script>
+  </nav>
+
+
+
+
+<!-- ========hero section starts=========== -->
+<!-- Hero Section -->
+<section class="home" id="home">
+  <div id="particles-js"></div>
+
+  <div class="content">
+  <h2>Discover Magical Kenya with <br> <span>Wanderlister-Kenya</span></h2>
+    <p>Explore <span class="typing-text"></span></p>
+    </a>
+  </div>
+
+  <div class="image">
+  </div>
+</section>
+<!-- Hero section ends -->
+
+
+
+
+ 
+<!-- ======== Hero Section Starts =========== -->
+<!-- Welcome Section -->
+<!-- Welcome and Slides Section -->
+<section class="destinations" id="explore-kenya">
+  <div class="#destinations" id="destinations">
+  <h1 class="heading"><i class="fas fa-suitcase-rolling"></i>Destinations & <span>Tours</span></h1>
+    <!-- Welcome Text -->
+    <div id="welcome-text">
+      <h2 id="welcome-title"></h2>
+      <p class="intro-text" id="welcome-intro"></p>
+    </div>
+
+    <!-- Slides -->
+    <div id="slides" class="slides"></div>
+
+    <!-- Explore More Button -->
+    <a href="#" class="explore-more">Explore More</a>
+  </div>
+</section>
+
+
+
+<!-- Destination Section (Hidden initially) --
+<section id="destinations" class="destination-container"></section>-->
+
+
+<section class="tours-section">
+  <div class="#tours" id="tours">
+
+  <h2 class="section-title"><i class="fas fa-compass"></i>Explore Our <span>Tours</span></h2>
+
+  
+  <div class="tours-container">
+    <!-- Single Tour Card -->
+    <div class="tour-card">
+      <img src="./gallery/maasai_mara_migration.jpg" alt="Tour image of Maasai Mara">
+      <div class="tour-content">
+        <h3 class="tour-title">3-Day Safari in Maasai Mara</h3>
+        <p class="tour-description">Experience the breathtaking wildlife and landscapes of the Maasai Mara with a full safari package.</p>
+        <div class="tour-info">
+          <span>Duration: 3 Days</span>
+          <span>Price: $500</span>
+        </div>
+        <a href="booking-link-1" class="book-now-btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Additional Tour Cards can be added similarly -->
+    <div class="tour-card">
+      <img src="./gallery/karen.png" alt="Tour image of Nairobi City">
+      <div class="tour-content">
+        <h3 class="tour-title">Nairobi City Tour</h3>
+        <p class="tour-description">Discover Nairobi's top attractions, including the Giraffe Center, Karen Blixen Museum, and more.</p>
+        <div class="tour-info">
+          <span>Duration: 1 Day</span>
+          <span>Price: $80</span>
+        </div>
+        <a href="booking-link-2" class="book-now-btn">Book Now</a>
+      </div>
+    </div>
+
+   <!-- Additional Tour Card 1: Amboseli National Park Tour -->
+   <div class="tour-card">
+    <img src="./gallery/amboseli_elephants.jpg" alt="Tour image of Amboseli National Park">
+    <div class="tour-content">
+      <h3 class="tour-title">2-Day Amboseli National Park Tour</h3>
+      <p class="tour-description">Get up close with elephants and enjoy stunning views of Mount Kilimanjaro in Amboseli National Park.</p>
+      <div class="tour-info">
+        <span>Duration: 2 Days</span>
+        <span>Price: $300</span>
+      </div>
+      <a href="booking-link-3" class="book-now-btn">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Additional Tour Card 2: Lamu Island Cultural Tour -->
+  <div class="tour-card">
+    <img src="./gallery/lamu.png" alt="Tour image of Lamu Island">
+    <div class="tour-content">
+      <h3 class="tour-title">Lamu Island Cultural Tour</h3>
+      <p class="tour-description">Immerse yourself in Swahili culture with a tour of the historic Lamu Island, a UNESCO World Heritage site.</p>
+      <div class="tour-info">
+        <span>Duration: 1 Day</span>
+        <span>Price: $120</span>
+      </div>
+      <a href="booking-link-4" class="book-now-btn">Book Now</a>
+    </div>
+  </div>
+  </div>
+  <!-- Response Container for Success/Failure Messages -->
+  <div id="response-container" style="display: none;">
+    <p id="response-message"></p>
+    <img id="response-image" src="" alt="Booking Response" style="display: none;" />
+  </div>
+</section>
+
+
+
+<!-- Blog Section Starts -->
+<section class="blog-section" id="blog">
+  <div class="container">
+      <h1 class="blog-heading"><i class="fas fa-bullhorn"></i> Kenyan News & <span>Events</span></h1>
+      
+      <div class="blog-grid">
+          <!-- First Blog Entry -->
+          <article class="blog-card">
+              <img src="./gallery/nairobi_event.jpg" alt="Nairobi Event" class="blog-image">
+              <div class="blog-info">
+                  <div class="blog-meta">
+                      <span class="author">Necxai</span> |
+                      <span class="date">05.11.2024</span>
+                  </div>
+                  <h4 class="blog-title">Explore Nairobi's Vibrant Nightlife</h4>
+                  <p class="blog-description">Discover the best spots to enjoy Nairobi's nightlife, from live music to cultural performances. Experience Kenya's capital city like never before.</p>
+              </div>
+          </article>
+
+          <!-- Second Blog Entry -->
+          <article class="blog-card">
+              <img src="./gallery/mombasa_festival.jpg" alt="Mombasa Festival" class="blog-image">
+              <div class="blog-info">
+                  <div class="blog-meta">
+                      <span class="author">Shantel Shartel</span> |
+                      <span class="date">15.11.2024</span>
+                  </div>
+                  <h4 class="blog-title">Mombasa Cultural Festival</h4>
+                  <p class="blog-description">Join the annual Mombasa Cultural Festival and immerse yourself in the coastal traditions of Kenya with music, dance, and delicious cuisine.</p>
+              </div>
+          </article>
+
+          <!-- Third Blog Entry --
+          <article class="blog-card">
+              <img src="./gallery/maasai_mara_migration.jpg" alt="Maasai Mara Migration" class="blog-image">
+              <div class="blog-info">
+                  <div class="blog-meta">
+                      <span class="author">Daisy Atieno</span> |
+                      <span class="date">20.11.2024</span>
+                  </div>
+                  <h4 class="blog-title">The Great Migration in Maasai Mara</h4>
+                  <p class="blog-description">Witness the breathtaking wildebeest migration in the Maasai Mara, a spectacle of nature's raw beauty that draws visitors from around the world.</p>
+              </div>
+          </article>-->
+
+          <!-- Fourth Blog Entry -->
+          <article class="blog-card">
+              <img src="./gallery/diani_beach_clean.jpg" alt="Diani Beach Cleanup" class="blog-image">
+              <div class="blog-info">
+                  <div class="blog-meta">
+                      <span class="author">Grace Owour</span> |
+                      <span class="date">25.11.2024</span>
+                  </div>
+                  <h4 class="blog-title">Diani Beach Cleanup Initiative</h4>
+                  <p class="blog-description">Join volunteers in Diani Beach to clean up the beautiful coastline and help preserve Kenya's natural beauty for future generations.</p>
+              </div>
+          </article>
+
+          <!-- Fifth Blog Entry --
+          <article class="blog-card">
+              <img src="./gallery/lake_naivasha_birding.jpg" alt="Birdwatching at Lake Naivasha" class="blog-image">
+              <div class="blog-info">
+                  <div class="blog-meta">
+                      <span class="author">James Mwangi</span> |
+                      <span class="date">30.11.2024</span>
+                  </div>
+                  <h4 class="blog-title">Birdwatching at Lake Naivasha</h4>
+                  <p class="blog-description">Explore Lake Naivasha, a haven for birdwatchers. Spot flamingos, kingfishers, and more as you embark on a scenic journey through this paradise.</p>
+              </div>
+          </article>
+
+          -- Sixth Blog Entry --
+          <article class="blog-card">
+              <img src="./gallery/mt_kenya_hike.jpg" alt="Mount Kenya Hiking Adventure" class="blog-image">
+              <div class="blog-info">
+                  <div class="blog-meta">
+                      <span class="author">Alice Kibaki</span> |
+                      <span class="date">02.12.2024</span>
+                  </div>
+                  <h4 class="blog-title">Mount Kenya Hiking Adventure</h4>
+                  <p class="blog-description">Embark on a thrilling hike up Mount Kenya, Africa's second-highest peak. Experience breathtaking views, unique flora, and exhilarating trails.</p>
+              </div>
+          </article>
+      </div>
+
+       -- Sixth Blog Entry --
+       <article class="blog-card">
+        <img src="./gallery/mt_kenya_hike.jpg" alt="Mount Kenya Hiking Adventure" class="blog-image">
+        <div class="blog-info">
+            <div class="blog-meta">
+                <span class="author">Alice Kibaki</span> |
+                <span class="date">02.12.2024</span>
+            </div>
+            <h4 class="blog-title">Mount Kenya Hiking Adventure</h4>
+            <p class="blog-description">Embark on a thrilling hike up Mount Kenya, Africa's second-highest peak. Experience breathtaking views, unique flora, and exhilarating trails.</p>
+        </div>
+    </article>
+</div>-->
+  </div>
+</section>
+<!-- Blog Section Ends -->
+
+
+
+        <!-- ========hero section ends=========== -->
+        
+
+ <!-- - NOTIFICATION TOAST --
+ <div class="notification-container">
+
+  
+  !-- Toast Item 1 --
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./header.png" alt="booked" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+      <p class="toast-message">Someone in Kisumu just booked with Us!</p>
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+    </div>
+  </div>-->
+
+  <div class="notification-toast" data-toast>
+  
+    <!-- Close Button -->
+    <button class="toast-close-btn" data-toast-close aria-label="Close Notification">
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+  
+    <!-- Toast Banner with image -->
+    <div class="toast-banner">
+      <img src="./img/booking-icon.png" alt="Booking Notification Icon" width="80" height="70">
+    </div>
+  
+    <!-- Toast Message and Details -->
+    <div class="toast-detail">
+      <p class="toast-message"><strong>Exciting!</strong> Someone in Kisumu just booked with us!</p>
+      <p class="toast-meta">
+        <time datetime="PT2M">2 minutes ago</time>
+      </p>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const toast = document.querySelector(".notification-toast");
+  const closeBtn = document.querySelector(".toast-close-btn");
+
+  // Show toast notification
+  function showToast() {
+    toast.setAttribute("data-toast", "active");
+    setTimeout(() => {
+      toast.removeAttribute("data-toast");
+    }, 5000); // Hide after 5 seconds
+  }
+
+  // Close the notification
+  closeBtn.addEventListener("click", () => {
+    toast.removeAttribute("data-toast");
+  });
+
+  // Trigger toast notification as an example
+  showToast();
+});
+
+    </script>
+  </div>
+  
+
+
+
+
+  <div class="container">
+    <!-- Bucket List Section -->
+    <div class="bucket-list-container">
+      <h3>Your Essential Travel Destinations</h3>
+      <div class="input-container">
+          <input type="text" id="bucketItem" placeholder="Add a new must-visit place">
+          <div class="date-inputs">
+              <label>From: <input type="date" id="startDate"></label>
+              <label>To: <input type="date" id="endDate"></label>
+          </div>
+          <button onclick="addBucketItem()">Add Destination</button>
+      </div>
+      <ul id="bucketList"></ul> <!-- Ensure this ID matches with the one in JS -->
+  </div>
+  
+  <script src="path/to/your/script.js"></script>
+  
+  
+    
+
+    <!-- Weather Lookup Section -->
+    <div id="weatherContainer" class="weather-container">
+      <h2>Weather🍃Lookup for Your Favorite Destinations🌍</h2>
+      <form id="weatherForm">
+        <input type="text" id="destinationInput" placeholder="Enter a destination to see the weather Info" required>
+        <button type="submit" onclick="fetchWeather()">Get Weather</button>
+      </form>
+      <ul id="weatherList"></ul>
+      
+    </div>
+    <div class="clock-container">
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hour-hand"></div>
+          <div class="minute-hand"></div>
+          <div class="second-hand"></div>
+          <div class="number number-12">12</div>
+          <div class="number number-3">3</div>
+          <div class="number number-6">6</div>
+          <div class="number number-9">9</div>
+        </div>
+      </div>
+      <div class="timeLbl" id="local-time">
+        <h2>Local Time🌍</h2>
+      </div>
+    </div>
+    
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const second = now.getSeconds();
+    
+        // Update analog clock hands
+        const hourDegree = (hour % 12) * 30 + minute * 0.5;  // Hour hand moves slowly as minute passes
+        const minuteDegree = minute * 6;  // Minute hand moves 6 degrees per minute
+        const secondDegree = second * 6;  // Second hand moves 6 degrees per second
+    
+        document.querySelector('.hour-hand').style.transform = `rotate(${hourDegree}deg)`;
+        document.querySelector('.minute-hand').style.transform = `rotate(${minuteDegree}deg)`;
+        document.querySelector('.second-hand').style.transform = `rotate(${secondDegree}deg)`;
+    
+        // Update digital time below
+        const localTimeElement = document.getElementById("local-time");
+        const localTimeString = now.toLocaleTimeString();
+        localTimeElement.textContent = `${localTimeString}`;
+      }
+    
+      setInterval(updateClock, 1000);
+      updateClock();  // Initial call to show time immediately
+    </script>
+    
+    
+  </div>
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container" id="contact">
+
+
+    <!-- About Section -->
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>Explore Kenya with our curated tours and travel experiences. Discover destinations, events, and cultural gems.</p>
+    </div>
+
+    <!-- Quick Links Section -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#news-events">News & Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+      <p><i class="fas fa-phone"></i> +254 712 345 678</p>
+      <p><i class="fas fa-envelope"></i> info@WanderlisterKenyacom</p>
+    </div>
+
+    <!-- Social Media Links Section -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <!-- Newsletter Signup Section -->
+    <div class="footer-newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Stay updated on the latest tours, travel tips, and events.</p>
+      <form action="#" method="post">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom Section -->
+  <div class="footer-bottom">
+    <h3 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+                    href="https://www.linkedin.com/in/necxai-b77063232/">necxai</a></h3>
+    <p class="copyright">Necxai © 2024 Wanderlister. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+
+<!----------------------------MY JS LINKS------------------>
+<!-- Link to the bucketList.js file -->
+<script src="bucketList.js"></script>
+<!-- Link to the ctaButton.js file -->
+<script src="ctaButton.js"></script>
+<!-- Link to the weather.js file -->
+<script src="weather.js"></script>
+<!-- Link to the destination.js file -->
+<script src="destination.js"></script>
+<!-- Link to the app.js file -->
+<script src="app.js"></script>
+<!-- Typed JS library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- Custom JS for typing effect -->
+<script src="script.js"></script>
+  <!-- particle.js links -->
+<script src="./particles.min.js"></script>
+<script src="./app.js"></script>
+<!-- Custom JS for booking -->
+<script src="booknow.js"></script>
+<!-- JavaScript file for loading -->
+<script src="script.js"></script>
+<!-- JavaScript file for toggle dark/light mode -->
+<script src="toggle.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/671b6bef2480f5b4f593ad9d/1ib1hr8va';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
